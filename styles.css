@@ -1,0 +1,159 @@
+html{
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* task 1 */
+
+blockquote::before{
+    content: '"';
+}
+
+blockquote {
+    align-content: center;
+    font-style: bold;
+}
+
+blockquote::after{
+    content: '"';
+}
+
+span{
+    font-style: italic;
+    
+}
+
+.ace {
+    position: relative;
+    
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+
+#ace3 {
+    position: relative;
+    transform: rotate(10deg);
+    left: -100px;
+    top: 220px;
+    transition: top .3s ease;
+}
+
+#ace2 {
+    position: relative;
+    transform: rotate(-10deg);
+    top: 200px;
+    transition: top .3s ease;
+
+}
+
+#ace1 {
+    position: relative;
+    transform: rotate(-20deg);
+    left: 105px;
+    top: 200px;
+    transition: top .3s ease;
+
+}
+
+
+#ace1:hover{  
+    top: 100px;
+}
+
+#ace2:hover{  
+    top: 100px;
+}
+
+#ace3:hover{  
+    top: 100px;
+}
+
+
+/* task 2 */
+
+.pink, .blue, .green {
+    position: inherit;
+    width: 300px;
+    height: 300px;
+}
+
+.pink{
+    background-color: #ff6699;
+    top: 100px;
+    left: 100px;
+}
+
+.blue{
+    background-color: #6666ff;
+    top: 0px;
+    left: 300px;
+    z-index: 2;
+}
+
+.green{
+    background-color: #6f9;
+    top: -100px;
+    left: 500px;
+}
+
+
+
+/* task 4 */
+
+
+
+@keyframes sliding{
+
+    0% {
+        top: 0;
+        left: 0;
+        background: red;
+    }
+
+    25%{
+        top: 200px;
+        left: 0;
+        background: blue;
+    }
+
+    50%{
+        top: 200px;
+        left: 200px;
+        background: green;
+    }
+
+    75%{
+        top: 0;
+        left: 200px;
+        background: yellow;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+        background: red;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: red;
+    top: 0;
+    left: 0;
+    animation: sliding 4s infinite;
+
+}
